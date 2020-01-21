@@ -1,0 +1,26 @@
+#ClassName#ParserMode#FileType#RuleName#regular expression
+#Standard#Single#General#memberVariableCheck# private [^(static)].* [^m].*;
+#Standard#Single#General#staticVariableCheck# private static [^f].* [^s].*;
+Standard#Single#General#stackTrace# .*.printStackTrace.*
+#Standard#Single#General#message# System.out.println
+#Standard#Single#Dao#booleanUsage# new Boolean.*
+#Standard#Single#Value#namingBooleanMethods# public boolean get.*
+#Standard#Single#Value#stringInitialization# private String m.*[^="];
+#Standard#Single#Dao#unchangedCheck# .*.setUnchanged();
+#Standard#Single#Dao#populateCheck# private .* populateValueList.*
+#Standard#Single#General#iteratorCheck# for(.*list.size.*)
+#Standard#Single#Dao#daocall# [[:lower:]].*Dao[^H].*
+#Standard#Single#Value#embeddedValueCheck# private .*[^(Key)(Info)]Value m.*;
+#Standard#Single#Dao#findAllCheck# public [^(Info)].*ValueList findAll\(.*
+#Standard#Single#Value#dateCheck# private Date m.*Date;
+#Standard#Single#Value#timeStampCheck# private Timestamp .*
+#Standard#Single#Value#datetimeCheck# .* m.*DateTime;
+#Standard#Group#Dao#innerInterfaceVersion# .*@version.*\n .*\n.*interface
+#Standard#Group#ManagerBean#innerInterfaceVersion# .*@version.*\n .*\n.*interface
+#Standard#Single#General#println# System.out.println.*
+#Standard#Single#UiBean#cloning#.* oldValue = mTransient.*
+#Standard#Single#UiBean#initializingCleanValue# m.*Value = new .*;
+#Standard#Single#General#initialListSize# .* new ArrayList\(\).*
+#Standard#Single#General#initialMapSize# .* new HashMap\(\).*
+#EqualCheck#Group#Value#equalityCheck# .*
+#Standard#Single#General#thischeck# this\..*
